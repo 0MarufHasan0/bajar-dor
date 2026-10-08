@@ -15,7 +15,7 @@ export default function Navbar() {
   useEffect(() => {
     const CategoryNav = async () => {
       const res = await fetch(
-        "https://api.api-store.workers.dev/api/bazardor/categories"
+        "https://api.abcz.workers.dev/api/bazardor/categories"
       );
 
       const data = await res.json();
@@ -111,8 +111,8 @@ export default function Navbar() {
           {catagory.map((cat) => (
             <li key={cat?.id}>
               <Link
-                href={`/category/${cat?.slug}`}
-                className= {`flex items-center gap-1 ${ pathname === `/category/${cat?.slug}`?'border-b border-green-700':''}`}
+                href={`/categories/${cat?.slug}`}
+                className= {`flex items-center gap-1 ${ pathname === `/categories/${cat?.slug}`?'border-b border-green-700':''}`}
               >
                 <span>{cat.icon}</span>
                 <p>{cat.nameBn}</p>
@@ -132,7 +132,7 @@ export default function Navbar() {
             {catagory.map((cat) => (
               <li key={cat?.id}>
                 <Link
-                  href={`/category/${cat?.slug}`}
+                  href={`/categories/${cat?.slug}`}
                   className="flex items-center gap-2 py-2"
                 >
                   <span>{cat.icon}</span>

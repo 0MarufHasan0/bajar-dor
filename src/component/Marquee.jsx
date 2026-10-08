@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 
 const allDataMarquee = async () => {
   const res = await fetch(
-    "https://api.api-store.workers.dev/api/bazardor/products",
+    "https://api.abcz.workers.dev/api/bazardor/products",
     {
       cache: "no-store",
     }
@@ -80,7 +80,7 @@ const MarqueeHeadline = async () => {
                 ) : (
                   <>
                     <span>—</span>
-                    <span>০%</span>
+                    <span>{product.change.pct}%</span>
                   </>
                 )}
                </div>

@@ -1,8 +1,8 @@
 import { Hind_Siliguri } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/component/Navbar";
+import Navbar from "../component/Navbar";
 import { Suspense } from "react";
-import MarqueeHeadline from "@/component/Marquee";
+import MarqueeHeadline from "../component/Marquee";
 
 const hindSiliguri = Hind_Siliguri({
   variable: "--font-hind-siliguri",

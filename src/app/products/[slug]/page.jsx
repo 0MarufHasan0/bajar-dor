@@ -1,11 +1,12 @@
-import React from 'react';
+// import React from 'react';
 
-const ProductDetails = () => {
-    return (
-        <div>
-            hello not started
-        </div>
-    );
-};
+// const ProductDetails = ({params}) => {
 
-export default ProductDetails;
+//     return (
+//         <div>
+//            ss
+//         </div>
+//     );
+// };
+
+// export default ProductDetails;
