@@ -1,6 +1,8 @@
 import { Hind_Siliguri } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/component/Navbar";
+import { Suspense } from "react";
+import MarqueeHeadline from "@/component/Marquee";
 
 const hindSiliguri = Hind_Siliguri({
   variable: "--font-hind-siliguri",
@@ -20,9 +22,19 @@ export default function RootLayout({ children }) {
       data-theme="light"
       className={`${hindSiliguri.className} h-full antialiased `}
     >
-      <body className="min-h-full flex flex-col ">
-
-        <Navbar/>
+          <body className="min-h-full flex flex-col ">
+    
+           <Suspense fallback={null}>
+      <Navbar />
+    </Suspense>
+              <div>
+      <Suspense fallback={<p>Loading...</p>}>
+        <MarqueeHeadline />
+      </Suspense>
+    </div>
+      
+        
+  
         
         
         {children}
