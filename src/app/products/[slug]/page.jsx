@@ -1,12 +1,12 @@
-// import React from 'react';
+import React from 'react';
 
-// const ProductDetails = ({params}) => {
+const ProductDetails = ({params}) => {
 
-//     return (
-//         <div>
-//            ss
-//         </div>
-//     );
-// };
+    return (
+        <div>
+           ss
+        </div>
+    );
+};
 
-// export default ProductDetails;
+export default ProductDetails;
